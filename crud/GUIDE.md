@@ -1,63 +1,79 @@
-Build a full-stack web application boilerplate called "AppName" (placeholder for users to rename) that allows users to securely create, view, edit, and delete personal items. The app should be modular, secure, and easily extensible. Include placeholders so users can modify app title, features, or content.
+Build a full-stack web application called "{{AppName}}" where users can securely create, view, edit, and delete personal items. The app should be fully functional, modular, and ready to run locally. Include placeholders so users can easily customize app title, features, and item content.
 
 ---
 
-Backend:
+# Backend:
 
 - Use Supabase as the database and authentication provider.
 - Implement user authentication (signup, login, logout) using Supabase Auth.
-- Create a database table for the main content items (e.g., notes, tasks, posts), linked to each authenticated user.
-- Include columns: 
+- Create a database table named `items` with columns:
   - id (primary key)
   - title (text)
-  - description/content (text)
+  - description (text)
   - user_id (foreign key to users)
   - created_at, updated_at (timestamps)
-- Secure database access so users can only read/write their own items.
+- Ensure users can only access their own data.
+- Include environment variable placeholders for Supabase keys.
 
-Frontend:
+# Frontend:
 
-- Include a modern, simple UI (React/Vue/Svelte) with routing:
-  - Login / Signup page
-  - Dashboard showing user’s items
-  - Add new item form
-  - Edit existing item form
-  - Delete confirmation modal
-- Use a placeholder "AppTitle" at top so users can change the title easily.
-- Include placeholders for "Feature 1", "Feature 2", … so users can add or rename features easily.
-- Connect frontend securely to Supabase backend using environment variables.
+- Modern, responsive UI using React (or another modern framework).
+- Routing:
+  - `/login` → login page
+  - `/signup` → signup page
+  - `/dashboard` → user’s items
+- Components:
+  - Dashboard: lists user items
+  - AddItemForm: form to add new item
+  - EditItemForm: form to edit existing item
+  - DeleteItemModal: confirm deletion
+  - Header/Footer with `{{AppTitle}}` placeholder
+- Include placeholders for "Feature 1", "Feature 2", "Feature 3" in the dashboard for users to customize.
 
-Security:
+# CRUD Functionality:
 
-- Ensure users only see and modify their own content.
-- Use environment variables for Supabase keys.
-- Include simple input validation on frontend and backend.
+- List all user items on the dashboard.
+- Add a new item (title + description).
+- Edit an existing item.
+- Delete an item with confirmation.
+- Sync all CRUD operations securely with Supabase backend.
 
-Instructions / Tasks for Generated Code:
+# Security:
 
-1. Generate the Supabase table schema for users and main content items.
+- Users can only view and edit their own items.
+- Validate input on frontend and backend.
+- Use environment variables for Supabase project URL and API key.
+
+# Instructions / Placeholders:
+
+- AppName → Change the app name easily
+- AppTitle → Change the main title visible on UI
+- Features → "Feature 1", "Feature 2", "Feature 3" placeholders for users to rename or add more
+- Example item → Add sample titles and descriptions
+
+# Tasks Lovable Should Handle:
+
+1. Generate Supabase schema for users and items.
 2. Set up Supabase Auth for signup/login/logout.
-3. Generate API routes (REST or Supabase client functions) for CRUD operations.
-4. Generate frontend pages/components for listing, adding, editing, and deleting items.
-5. Connect frontend to Supabase securely with environment variables.
-6. Include routing so login/signup redirects to dashboard.
-7. Make UI simple, responsive, and visually appealing.
-8. Include placeholder content sections where users can modify:
-   - AppTitle
-   - Feature 1, Feature 2, Feature 3 …
-   - Example item titles and descriptions
-9. Provide a README.md with instructions:
-   - How to set environment variables
-   - How to run the app locally
-   - How to connect to Supabase
+3. Generate frontend components for listing, adding, editing, deleting items.
+4. Connect frontend securely to Supabase backend.
+5. Include routing between login/signup and dashboard.
+6. Add placeholders for AppTitle, Features, and sample item content.
+7. Provide README.md with instructions:
+   - Set environment variables
+   - Run the app locally
+   - Connect to Supabase
 
----
+# Output Requirements:
 
-Output Requirements:
+- Full working codebase ready to run locally.
+- Modular folder structure with separate frontend, backend, components, and utils.
+- Clear comments indicating where users can customize app name, features, or content.
+- Secure, functional, visually simple but appealing UI.
+- Include instructions for running locally, setting up Supabase, and environment variables.
 
-- Full codebase ready to run locally.
-- Include environment variable placeholders.
-- Clean, modular code with separate files for components, services, and utilities.
-- Clear comments indicating where users can modify app name, features, or content.
-- Secure and functional, ready for immediate testing.
-- Provide all files structured in a `/crud` folder.
+# Optional Enhancements:
+
+- Add responsive design for mobile.
+- Include timestamps on dashboard items.
+- Add sorting/filtering options for user items.
