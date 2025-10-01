@@ -1,0 +1,39 @@
+Build a full-stack web application called “QuickNotes ” where users can securely create, view, edit, and delete personal notes. The app should:
+
+Backend:
+
+Use Supabase as the database and authentication provider.
+
+Implement user authentication (signup, login, logout) using Supabase Auth.
+
+Store notes securely in a table linked to each authenticated user.
+
+Frontend:
+
+Simple, modern UI showing a list of user’s notes.
+
+Allow users to add new notes, edit existing ones, and delete notes.
+
+Include a “login/signup” page and redirect to notes after login.
+
+Security:
+
+Ensure users can only see and modify their own notes.
+
+Use environment variables for Supabase keys.
+
+Tasks (for you to handle internally):
+
+Generate the Supabase table schema for notes and users.
+
+Set up Supabase Auth for secure login/signup.
+
+Generate the frontend code to list, add, edit, and delete notes.
+
+Connect frontend to Supabase using API keys securely.
+
+Include routing so login redirects to notes dashboard.
+
+Make the UI simple but visually appealing.
+
+Output the full codebase ready to run locally, with instructions on how to set environment variables, run the app, and connect to Supabase. Keep it secure, functional, and user-ready.
