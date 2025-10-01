@@ -55,3 +55,5 @@ Guardrails are rules or constraints applied to AI outputs to ensure safety, reli
 
 ## CRUD
 CRUD App building boiler template provided to be used as a prompt to build with AI code editors or prototyping application makers like Lovable and Bolt
+ 
+Check out [QNotes](https://qnotes.lovable.app/) — a simple, polished notes CRUD app spun up from a single prompt. Sign up and explore the flows to see how one concise instruction can scaffold a full create–read–update–delete experience end-to-end.
