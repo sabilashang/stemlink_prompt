@@ -6,7 +6,7 @@ To get started with this repository, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/stemlink.git
+   git clone https://github.com/sabilashang/stemlink_prompt.git
    cd stemlink
    ```
 
