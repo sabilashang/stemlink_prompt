@@ -1,3 +1,5 @@
+# Copy the entire prompt in raw and make amendments such as removing this line, and modifying the template for name and app features to build your very own application in a single prompt
+
 Build a full-stack web application called "{{AppName}}" where users can securely create, view, edit, and delete personal items. The app should be fully functional, modular, and ready to run locally. Include placeholders so users can easily customize app title, features, and item content.
 
 ---

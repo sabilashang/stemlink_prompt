@@ -1,5 +1,34 @@
 # Prompt Engineering – Coding Workflows & Refactoring
 
+## Setup Instructions
+
+To get started with this repository, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/stemlink.git
+   cd stemlink
+   ```
+
+2. **Install Python dependencies (if any):**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Navigate to the specific exercises:**
+   - For guided refactoring: `cd refactoring/`
+   - For prompting techniques: `cd techniques/`
+   - For guardrails: `cd guardrails/`
+
+## Browser Used: Comet by Perplexity
+
+This repository is made with **Comet**, Perplexity's AI-powered browser that provides enhanced coding assistance and AI integration. Comet offers advanced features for support on development, learning and automation of simple tasks.
+
+**Get Early Access:**
+- Visit: [pplx.ai/sabilashan-ganeshan](https://pplx.ai/sabilashan-ganeshan)
+- Sign up with your university email address to get early access to Comet
+- Perfect for students and researchers working on prompt engineering projects
+
 ## Introduction
 This repository is a hands-on playground for learning and practicing prompt engineering with a focus on coding workflows and refactoring. You will:
 - Refactor messy Python functions using proven prompt patterns.
